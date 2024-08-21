@@ -19,7 +19,7 @@ export default function TabsLayout() {
       initialRouteName="home"
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: "#5747E6", 
+          backgroundColor: "#0077c0", 
           paddingTop: 5, 
           height: 70,
           
@@ -27,7 +27,7 @@ export default function TabsLayout() {
           borderTopLeftRadius: 15, 
           borderTopRightRadius: 15, 
           ...Platform.OS === "ios" ? {
-            backgroundColor: "#5747E6", 
+            backgroundColor: "#0077c0", 
             paddingTop: 5, 
             height: 90,
             
@@ -54,10 +54,10 @@ export default function TabsLayout() {
       }
     >
       <Tabs.Screen
-        name="index"
+        name="home"
         
         options={{
-          href: "/",
+          href: "/home",
           
           tabBarIcon: ({ color }) => (
             <View
@@ -97,7 +97,7 @@ export default function TabsLayout() {
                 backgroundColor: "transparent",
               }}
             >
-              <FontAwesome6 name="user-circle" size={20} color={color} />
+              <Feather name="settings" size={20} color={color} />
               <Text style={{ marginTop: 3, paddingBottom: 10, fontSize: 10, opacity: 0.5 }}>
       
               </Text>

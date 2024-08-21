@@ -1,6 +1,5 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
-
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { Redirect, Stack } from "expo-router";
@@ -53,24 +52,14 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   return (
-   
-        <>
-        <Provider store={store}>
-    
+    <>
+      <Provider store={store}>
         <Stack>
-
-        <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="auth/login" options={{ headerShown: false }} />
         </Stack>
-
         <StatusBar style="light" />
-
-   
-    </Provider>
-
-        </>
-       
-   
+      </Provider>
+    </>
   );
 }
