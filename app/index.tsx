@@ -66,7 +66,7 @@ const Welcome = () => {
                   value={name}
                   onChangeText={setName}
                 />
-                <TouchableOpacity className="bg-blue-500 p-3 px-5 rounded-lg" onPress={handleGetStarted}>
+                <TouchableOpacity className="bg-[#0077c0] p-3 px-5 rounded-lg" onPress={handleGetStarted}>
                   <Feather name="arrow-right" size={24} color="white" />
                 </TouchableOpacity>
               </View>
@@ -79,6 +79,7 @@ const Welcome = () => {
         </View>
       </ScrollView>
       <StatusBar backgroundColor="#161622" style="light" />
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

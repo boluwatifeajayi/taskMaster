@@ -67,7 +67,7 @@ const HomeScreen = () => {
   const sortedTodos = [...todos].sort((a:any, b:any) => a.completed - b.completed);
 
   return (
-    <View className="flex-1 py-20 bg-blue-100 p-4">
+    <View className="flex-1 py-20 bg-blue-50 p-4">
       <Text className="text-blue-500 pt-10 font-psemibold text-2xl">{getGreeting()}, {userName}</Text>
       <Text className="pt-0 font-psemibold text-gray-600 text-md mb-4">What are we getting done today ?</Text>
       <SwipeListView
@@ -84,7 +84,7 @@ const HomeScreen = () => {
       />
       <TouchableOpacity
         onPress={() => setModalVisible(true)}
-        className="absolute bottom-4 right-4 bg-blue-500 p-4 px-6 rounded-full"
+        className="absolute bottom-28 right-4 bg-[#0077c0] p-4 px-6 rounded-full"
       >
         <Text className="text-white font-psemibold text-lg">New Todo +</Text>
       </TouchableOpacity>

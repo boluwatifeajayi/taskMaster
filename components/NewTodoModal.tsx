@@ -54,7 +54,7 @@ const NewTodoModal: React.FC<NewTodoModalProps> = ({ onAddTodo, onClose, todo })
         />
         {error ? <Text className="text-red-500 mb-4">{error}</Text> : null}
         <View className="flex-row justify-between">
-          <TouchableOpacity onPress={handleAddTodo} className="bg-blue-500 p-3 rounded-lg flex-1 mr-2">
+          <TouchableOpacity onPress={handleAddTodo} className="bg-[#0077c0] p-3 rounded-lg flex-1 mr-2">
             <Text className="text-white font-psemibold text-center text-lg">{todo ? 'Update' : 'Add Todo'}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={onClose} className="bg-gray-400 p-3 rounded-lg flex-1 ml-2">

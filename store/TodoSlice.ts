@@ -6,7 +6,7 @@ interface Todo {
   title: string;
   description: string;
   completed: boolean;
-  createdAt: string; // Add the createdAt field
+  createdAt: string; 
 }
 
 interface TodoState {
@@ -37,7 +37,7 @@ const todoSlice = createSlice({
     addTodo: (state, action: PayloadAction<Omit<Todo, 'createdAt'>>) => {
       const newTodo = {
         ...action.payload,
-        createdAt: new Date().toLocaleString(), // Automatically add the current date and time
+        createdAt: new Date().toLocaleString(), 
       };
       state.todos.push(newTodo);
       saveTodosToStorage(state.todos);

@@ -1,5 +1,3 @@
-Certainly! Here's a comprehensive README and documentation for your Expo app, incorporating all the modifications and features we've discussed:
-
 # Welcome to TaskMaster 📋
 
 TaskMaster is an Expo project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app). It is a simple to-do list app built with React Native, Expo, and Redux. This app helps you stay organized and focused by allowing you to create, manage, and complete tasks effortlessly.
@@ -15,7 +13,7 @@ TaskMaster is an Expo project created with [`create-expo-app`](https://www.npmjs
 2. **Start the App**
 
    ```bash
-   npx expo start
+   npx expo start or npm start
    ```
 
 In the output, you'll find options to open the app in a:
