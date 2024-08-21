@@ -13,7 +13,7 @@ TaskMaster is an Expo project created with [`create-expo-app`](https://www.npmjs
 2. **Start the App**
 
    ```bash
-   npx expo start or npm start
+   npx expo start
    ```
 
 In the output, you'll find options to open the app in a:
